@@ -15,6 +15,6 @@ int tz(int n) {
 
 
 int main() {
-    int number = 100;
+    int number = 15;
     std::cout<< tz(number);
 }
