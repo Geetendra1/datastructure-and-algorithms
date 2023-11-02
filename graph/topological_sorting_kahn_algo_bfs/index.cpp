@@ -23,6 +23,7 @@ void topologicalSort(vector<int> adj[], int V)
         }
     }
 
+
     while(q.empty() == false){
         int u = q.front();
         q.pop();
