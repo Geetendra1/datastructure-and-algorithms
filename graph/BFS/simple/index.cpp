@@ -2,6 +2,19 @@
 #include <queue>
 using namespace std;
 
+
+/**
+ * create a boolean array visited[] of size V.
+ * loop through this visted array and assign each item to False.
+ * create a queue<int> q.
+ * make visited[s] = true;
+ * push 's' which is source into this queue.
+ * Run a while loop of conditon queue.empty() == false.
+ * in loop - get the first item out of the queue and assign to to var 'u'.
+ * in loop - run another loop for all the adjecent of 'u'.
+ * in loop - in loop - check if the the visited[u] == false , push the 'u' inside the queue. 
+*/
+
 void BFS(vector<int> adj[], int V, int s) {
     bool visited[V];
     for(int i=0; i<V; i++){

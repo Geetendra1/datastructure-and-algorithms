@@ -2,6 +2,16 @@
 #include <queue>
 using namespace std;
 
+/**
+ * DSF() - create a boolean array visited[] of size V.
+ * DSF - loop through this visted array and assign each item to False.
+ * DSF - call DFSR(adj[], s, visted[])
+ * DFSR -  make visited[s] = true and cout << s << "";
+ * DFSR - in loop(for) - run 'for' loop for all the adjecent of 's'.
+ * DFSR - check if the the visited[u] == false.
+ * DFSR - make recursive call of DFSR()
+*/
+
 
 void DFSR(vector<int> adj[], int s, bool visited[]){
     visited[s] = true; 
@@ -12,7 +22,6 @@ void DFSR(vector<int> adj[], int s, bool visited[]){
             DFSR(adj, u, visited);
         }
     }
- 
 }
 
 void DFS(vector<int> adj[], int V, int s){
@@ -20,9 +29,7 @@ void DFS(vector<int> adj[], int V, int s){
     for (int i = 0; i < V; i++) {
         visited[i] = false;
     }
-
     DFSR(adj, s, visited);
-    
 }
 
 

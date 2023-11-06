@@ -2,6 +2,24 @@
 #include <queue>
 using namespace std;using namespace std;
 
+/**
+ * LOGIC - every visited[i] == false is the source
+ * 
+ * 
+ * BFSA - create a boolean array visited[] of size V.
+ * BFSA - loop through this visted array and assign each item to False.
+ * BFSA - loop through this visted array and check every visted[i] == fasle.
+ * BFSA - for every visited[i] == false call BFS() function.
+ * BFS -  create a queue<int> q.
+ * BFS -  make visited[s] = true;
+ * BFS - push 's' which is source into this queue.
+ * BFS - Run a while loop of conditon queue.empty() == false.
+ * BFS - in loop(while) - get the first item out of the queue and assign to to var 'u'.
+ * BFS - in loop(while) - in loop(for) - run another 'for' loop for all the adjecent of 'u'.
+ * BFS -in loop(while) - in loop(for) - check if the the visited[u] == false.
+ * BFS -in loop(while) - in loop(for) - mark visited[u] == true , push the 'u' inside the queue. 
+*/
+
 
 void BFS(vector<int> adj[], int s, bool visited[]) 
 { 	queue<int>  q;
