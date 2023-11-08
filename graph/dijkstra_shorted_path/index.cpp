@@ -16,7 +16,6 @@ vector<int> djikstra(int graph[V][V], int src){
                 u = i;
             }
         }
-
         fin[u] = true;
         for(int v = 0; v < V; v++) {
             if(graph[u][v]!=0 && fin[v] == false){
@@ -27,10 +26,7 @@ vector<int> djikstra(int graph[V][V], int src){
     }
 
     return dist;
-
 }
-
-
 
 int main() 
 { 
